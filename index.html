@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>挂机test</title> 
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+</script>
+</head>
+<style>
+button.ce
+{
+margin-left:-140px;  
+}
+#textCanvas
+{
+    margin-bottom:100px;  
+}
+</style>
+<body onload="load()">
+<audio src="/audio/contra.mp3" autoplay="autoplay" muted ></audio>
+<canvas id="myCanvas" width="800" height="400"
+style="border:1px solid #000000;">
+</canvas>
+<canvas id="textCanvas" width="400" height="300" margin-bottom:"100px"
+style="border:1px solid #000000;">
+</canvas>
+
+
+<button id="minerup" class="ce" type="button" onclick="minerup()" >miner+</button>
+<button id="minerdown" class="ce"  type="button" onclick="minerdown()" >miner-</button>
+<button id="jackerup" class="ce"  type="button" onclick="jackerup()" >jacker+</button>
+<button id="jackerdown" class="ce"  type="button" onclick="jackerdown()" >jacker-</button>
+
+<div>本</div>
+
+时间<div id="demo1">1</div>
+<div id="demo2">2</div>
+<div id="demo3">3</div>
+<div id="demo4">4</div>
+x
+<div id="demo5">5</div>
+y
+<div id="demo6">6</div>
+
+<button id="left" type="button" onclick="left()" >left</button>
+<button id="right" type="button" onclick="right()" >right</button>
+<button id="up" type="button" onclick="up()" >up</button>
+<button id="down" type="button" onclick="down()" >down</button>
+<button id="refrash" type="button" onclick="attack()"  >attack</button>
+<div></div>
+等级
+<div id="demo7"></div>
+speed
+<div id="demo8"></div>
+range
+<div id="demo9"></div>
+<button id="update" type="button" onclick="age()" >update</button>
+<button id="speed" type="button" onclick="speed()" >speed</button>
+<button id="range" type="button" onclick="range()" >range</button>
+<p>
+<button id="save" type="button" onclick="save()" >save</button>
+<button id="load" type="button" onclick="load()" >load</button>
+
+
+<div id="demo10"></div>
+
+
+
+
+
+<script type="text/javascript" src="js/draw.js"></script>
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/Cookies.js"></script>
+<script type="text/javascript" src="js/resource.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
