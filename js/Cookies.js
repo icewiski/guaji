@@ -48,6 +48,7 @@ function load(){
     player.y=x5;
      
      drawtext();
-
+document.getElementById("demo5").innerHTML=player.x;
+document.getElementById("demo6").innerHTML=player.y;
      document.getElementById("demo10").innerHTML=gold;
     }
