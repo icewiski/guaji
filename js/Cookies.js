@@ -7,6 +7,7 @@ function save(){
 	 $.cookie('jacker',jacker ,{expires:7}) ;
      $.cookie('x',player.x ,{expires:7}) ;
      $.cookie('y',player.y ,{expires:7}) ;
+      $.cookie('birthtime',b ,{expires:7}) ;
 	  document.getElementById("demo10").innerHTML=gold;
        drawtext();
 	 }
@@ -46,9 +47,20 @@ function load(){
     var x5 = str5-0;
     x5 = x5*1;
     player.y=x5;
+
+   
      
      drawtext();
+     draw();
 document.getElementById("demo5").innerHTML=player.x;
 document.getElementById("demo6").innerHTML=player.y;
      document.getElementById("demo10").innerHTML=gold;
     }
+    function loadb(){
+         b=$.cookie('birthtime'); 
+	var str6= b;
+    var x6 = str6-0;
+    x6 = x6*1;
+    b=x6;
+      drawtext();
+     draw(); }
