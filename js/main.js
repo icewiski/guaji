@@ -8,8 +8,8 @@ var pp=0
 var pu=1;
 
 var player={
-    x: c,
-    y: d,
+    x: 50,
+    y: 50,
     a:"10",
     b:"",
     d:1,

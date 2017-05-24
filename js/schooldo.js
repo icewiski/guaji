@@ -1,5 +1,5 @@
- var l=3;  //当前使用数组顺序
-       var level=l-3;
+       var l=3;  //当前使用数组顺序
+       var level=1;
        var  lefthp=ssc[l];
 
 
@@ -25,8 +25,10 @@ function drawlevel(){
 function d(){
 
     if (lefthp<=0){
+       level=l-2;
        l=l+1;
-       level=l-2; 
+        level=level+1; 
+        people=level;
        lefthp=ssc[l]
         drawlevel();
           }

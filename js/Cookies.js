@@ -1,4 +1,7 @@
-
+function check(){
+    if ($.cookie('l')>=3){load()}
+    else {return}
+}
 
 function save(){
 	 $.cookie('gold',gold ,{expires:7}) ;
@@ -54,7 +57,8 @@ function load(){
     var x6 = str6-0;
     x6 = x6*1;
     l=x6;
-
+     
+     level=l-2;
      startdraw();
        drawtext();
        drawlevel();

@@ -9,8 +9,8 @@
 <style>
 
 </style>
-<body onload="load()" >
-<audio src="/audio/contra.mp3" autoplay="autoplay" muted ></audio>
+<body onload="check()" >
+
 <canvas id="myCanvas" width="400" height="400"
 style="border:1px solid #000000;">
 </canvas>
@@ -22,13 +22,14 @@ style="border:1px solid #000000;">
 </canvas>
 
 <p>
-<button id="minerup" class="ce" type="button" onclick="minerup()" >miner+</button>
-<button id="minerdown" class="ce"  type="button" onclick="minerdown()" >miner-</button>
-<button id="jackerup" class="ce"  type="button" onclick="jackerup()" >jacker+</button>
-<button id="jackerdown" class="ce"  type="button" onclick="jackerdown()" >jacker-</button>
+<button id="minerup" class="ce" type="button" onclick="minerup()" >增加矿工</button>
+<button id="minerdown" class="ce"  type="button" onclick="minerdown()" >减少矿工</button>
+<button id="jackerup" class="ce"  type="button" onclick="jackerup()" >增加伐木工</button>
+<button id="jackerdown" class="ce"  type="button" onclick="jackerdown()" >减少伐木工</button>
 
 <div></div>
-
+<button id="save" type="button" onclick="d()" height=20px width=100px;>点击按钮手动攻击</button>
+<p></p>
 时间<div id="demo1">1</div>
 <div id="demo2">2</div>
 <div id="demo3">3</div>
@@ -53,9 +54,9 @@ range
 <button id="update" type="button" onclick="age()" >update</button>
 <button id="speed" type="button" onclick="speed()" >speed</button>
 <button id="range" type="button" onclick="range()" >range</button>
-每秒自动伤害，点击最下方do按钮手动输出。敌方血量小于0后升级。
+
 <p>
-<button id="save" type="button" onclick="d()" >do</button>
+
 <button id="load" type="button" onclick="load()" >load</button>
 
 
