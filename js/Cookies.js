@@ -7,12 +7,10 @@ function save(){
 	 $.cookie('jacker',jacker ,{expires:7}) ;
      $.cookie('x',player.x ,{expires:7}) ;
      $.cookie('y',player.y ,{expires:7}) ;
-     $.cookie('birthtime',b ,{expires:7}) ;
-     $.cookie('o',o ,{expires:7}) ;
-     $.cookie('resource',resource ,{expires:7}) ;
-     $.cookie('producer',producer ,{expires:7}) ;
-	  document.getElementById("demo10").innerHTML=gold;
-       drawtext();
+     $.cookie('l',l ,{expires:7}) ;
+	
+      
+     
 	 }
 function load(){
 	gold=$.cookie('gold'); 
@@ -50,37 +48,19 @@ function load(){
     var x5 = str5-0;
     x5 = x5*1;
     player.y=x5;
-
-    resource==$.cookie('resource');
-    var str6= resource;
+    
+    l=$.cookie('l'); 
+	var str6= l;
     var x6 = str6-0;
     x6 = x6*1;
-    resource=x6;
+    l=x6;
 
-    producer==$.cookie('producer');
-    var str7= producer;
-    var x7 = str7-0;
-    x7 = x7*1;
-    producer=x7;
-
-    o==$.cookie('o');
-    var str8= o;
-    var x8 = str8-0;
-    x8 = x8*1;
-    or=x8;
-
-    drawtext();
-    draw();
+     startdraw();
+       drawtext();
+       drawlevel();
     document.getElementById("demo5").innerHTML=player.x;
     document.getElementById("demo6").innerHTML=player.y;
-    document.getElementById("demo10").innerHTML=gold;
+    document.getElementById("demo10").innerHTML=l;
     }
   
-    function loadb(){
-         b=$.cookie('birthtime'); 
-	var str6= b;
-    var x6 = str6-0;
-    x6 = x6*1;
-    b=x6;
-      drawtext();
-     draw(); }
+  

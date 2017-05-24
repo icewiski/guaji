@@ -1,3 +1,4 @@
+
 var people=10;
 var gold=1;
 var wood=1;
@@ -8,7 +9,13 @@ var jacker=1;
 var collectspeed=1;
 var collecttime=1000;
 var myVar1=setInterval(function(){collectgold()},collecttime);
-
+function collectgold(){
+    gold =gold+ miner*collectspeed;
+    wood =wood+ jacker*collectspeed;
+    save();
+    drawtext();
+    
+       }
 function drawtext(){
      var c=document.getElementById("textCanvas");
     var ctx=c.getContext("2d");
@@ -28,16 +35,6 @@ function drawtext(){
     ctx.fillText("population:",10,120);
     ctx.fillText(people,110,120);
     }
-
-function collectgold(){
-    gold =gold+ miner*collectspeed;
-    wood =wood+ jacker*collectspeed;
-    save();
-    drawtext();
-    
-       }
-
-
 
 function minerup(){
     if (miner + jacker>people-1){return;}

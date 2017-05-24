@@ -34,13 +34,13 @@ document.getElementById("demo6").innerHTML=player.y;
 
        
 function age(){
-     loadb();
+     
     var b1=new Date();
     
     var b2=b1.getTime();
    var t1=b.getTime();
     t2=Math.round((b2-t1)/10000);
-    document.getElementById("demo7").innerHTML=t1; 
+    document.getElementById("demo7").innerHTML=t2; 
     
    
     }
