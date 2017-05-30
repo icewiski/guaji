@@ -1,6 +1,4 @@
-var c=Math.round( Math.random()*400);
-var d=Math.round( Math.random()*200);
-var b=new Date();
+
 
 var t=1;
 var t2=1;
@@ -17,7 +15,7 @@ var player={
     range:20,
     age:"3424"
            }
-var myVar=setInterval(function(){myTimer()},1000);
+var myVar=setInterval(function(){age()},1000);
 function myTimer(){
 	    t=t+1;
         document.getElementById("demo1").innerHTML=t;
@@ -34,16 +32,26 @@ document.getElementById("demo6").innerHTML=player.y;
 
        
 function age(){
-     
-    var b1=new Date();
-    
+     save();
+    var b1=new Date();    
     var b2=b1.getTime();
-   var t1=b.getTime();
-    t2=Math.round((b2-t1)/10000);
-    document.getElementById("demo7").innerHTML=t2; 
+
+      if (l>=3) {
+         var b=new Date();
+         var t1=b.getTime();
+         t2=Math.round((b2-t1)/10000);
+         document.getElementById("demo7").innerHTML=t1; 
+}
+    else {
+        var b=new Date();
+        var t1=b.getTime();
+        t2=Math.round((b2-t1)/10000);
+        document.getElementById("demo7").innerHTML=t1;
+}
+    
     
    
-    }
+     }
 
 pu=t2;
 function speed(){

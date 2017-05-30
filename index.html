@@ -3,7 +3,7 @@
 <head> 
 <meta charset="utf-8"> 
 <title>挂机test</title> 
-<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+<script src="libs/jquery-3.2.1.min.js">
 </script>
 </head>
 <style>
@@ -11,8 +11,8 @@
 </style>
 <body onload="check()" >
 
-<canvas id="myCanvas" width="400" height="400"
-style="border:1px solid #000000;">
+<canvas id="myCanvas" width="400" height="400" hidden
+style="border:1px solid #000000;"> 
 </canvas>
 <canvas id="textCanvas" width="400" height="400" margin-bottom:"100px"
 style="border:1px solid #000000;">
@@ -26,10 +26,12 @@ style="border:1px solid #000000;">
 <button id="minerdown" class="ce"  type="button" onclick="minerdown()" >减少矿工</button>
 <button id="jackerup" class="ce"  type="button" onclick="jackerup()" >增加伐木工</button>
 <button id="jackerdown" class="ce"  type="button" onclick="jackerdown()" >减少伐木工</button>
+<button id="dplus" class="ce"  type="button" onclick="dpluss()" >增加秒伤</button>
+<button id="eplus" class="ce"  type="button" onclick="epluss()" >增加点击伤害</button>
 
 <div></div>
-<button id="save" type="button" onclick="d()" height=20px width=100px;>点击按钮手动攻击</button>
-<p></p>
+<button id="save" type="button" onclick="e()" style="width:100px;height:50px">点击按钮手动攻击</button>
+<p>每级提供一个人口，每100木材提供10点秒伤，每100黄金提供20点击伤害</p>
 时间<div id="demo1">1</div>
 <div id="demo2">2</div>
 <div id="demo3">3</div>
@@ -39,11 +41,11 @@ x
 y
 <div id="demo6">6</div>
 
-<button id="left" type="button" onclick="left()" >left</button>
-<button id="right" type="button" onclick="right()" >right</button>
-<button id="up" type="button" onclick="up()" >up</button>
-<button id="down" type="button" onclick="down()" >down</button>
-<button id="refrash" type="button" onclick="attack()"  >attack</button>
+<button id="left" type="button" onclick="left()" hidden>left</button>
+<button id="right" type="button" onclick="right()" hidden>right</button>
+<button id="up" type="button" onclick="up()"hidden >up</button>
+<button id="down" type="button" onclick="down()"hidden >down</button>
+<button id="refrash" type="button" onclick="attack()"  hidden>attack</button>
 <div></div>
 level
 <div id="demo7"></div>

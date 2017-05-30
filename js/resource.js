@@ -12,6 +12,8 @@ var myVar1=setInterval(function(){collectgold()},collecttime);
 function collectgold(){
     gold =gold+ miner*collectspeed;
     wood =wood+ jacker*collectspeed;
+    if(gold<0){gold=0};
+    if(wood<0){wood=0};
     save();
     drawtext();
     

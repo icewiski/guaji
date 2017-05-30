@@ -1,5 +1,9 @@
 function check(){
-    if ($.cookie('l')>=3){load()}
+    if ($.cookie('l')>=3){
+       
+         var t1=$.cookie('t1');
+        load();
+        }
     else {return}
 }
 
@@ -11,10 +15,11 @@ function save(){
      $.cookie('x',player.x ,{expires:7}) ;
      $.cookie('y',player.y ,{expires:7}) ;
      $.cookie('l',l ,{expires:7}) ;
-	
-      
-     
-	 }
+     $.cookie('t1',t1 ,{expires:7}) ;
+     $.cookie('dplus',dplus ,{expires:7}) ;
+     $.cookie('eplus',eplus ,{expires:7}) ;
+            	 }
+
 function load(){
 	gold=$.cookie('gold'); 
 	var str= gold;
@@ -57,8 +62,28 @@ function load(){
     var x6 = str6-0;
     x6 = x6*1;
     l=x6;
+
+    t1=$.cookie('t1'); 
+	var str7=t1;
+    var x7 = str7-0;
+    x7 = x7*1;
+    t1=x7;
+
+     dplus=$.cookie('dplus'); 
+	var str8=dplus;
+    var x8 = str8-0;
+    x8 = x8*1;
+    dplus=x8;
+
+     eplus=$.cookie('eplus'); 
+	var str9=eplus;
+    var x9 = str9-0;
+    x9 = x9*1;
+    eplus=x9;
      
+    
      level=l-2;
+     l=l-1;
      startdraw();
        drawtext();
        drawlevel();
